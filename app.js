@@ -9,10 +9,14 @@ const btn = document.getElementById('btn')
 
 async function loading () {
   load.style.display = 'flex'
-await setTimeout(()=>{
-  load.style.display = 'none'
-},6000)
-console.log('dsds')
+  const loadProm = new Promise ((resolve,reject) => {
+    setTimeout(()=>{
+      load.style.display = 'none'
+      resolve()
+    },6000)
+  }).then(() =>{ 
+    console.log('dsds')
+})
 }
 
 btn.addEventListener('click',loading)
