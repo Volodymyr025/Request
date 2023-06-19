@@ -40,7 +40,7 @@ async function loading () {
     const response = await fetch(url)
     const data = await response.json()
     await visible(userTable)
-    await addListUser(data)
+    await createListUser(data)
   }
   catch (e) {
     console.error(e)
