@@ -17,7 +17,7 @@ function visible (item) {
   item.style.display = 'flex'
 }
 
-function addListUser (userData){
+function createListUser (userData){
   const post = document.querySelector('.post')
   for(const dataList of userData){
     const elTr = document.createElement('tr')
