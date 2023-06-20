@@ -21,7 +21,6 @@ function createListUser (userData){
   const post = document.querySelector('.post')
   for(const dataList of userData){
     const elTr = document.createElement('tr')
-    const elTd = document.createElement('td')
     let itemEl = ''
     itemEl += `<td>${dataList.name}</td>
     <td>${dataList.username}</td>
